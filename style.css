@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:lightblue
+}
+/* Navigation CSS */
+nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  text-align:center;
+  align-items:center;
+  width:100%;
+  background-color:white;
+  color:black
+}
+a{
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+  border:1px black solid
+}
+
+a:hover {
+  background-color:lightblue
+}
+  .tab1 {
+    order: 1;
+    width: 33%;
+  }
+  .tab2 {
+    order: 2;
+    width: 33%;
+  }
+  .tab3 {
+    order: 3;
+    width: 33%;
+  }
+/* Title */
+h1{
+  text-align: center;
+  color:white;
+  margin-top:50px;
+  padding-top:100px
+}
+.subtitle{
+  text-align: center;
+  color:white;
+  padding:10px;
+  padding-top:30px
+}
+.container{
+  background-image:url("wire.png");
+  background-size:cover;
+  height:500px;
+  width:1000px;
+  margin:auto;
+}
+/* Headers For Each Section */
+.about{
+  margin-top:100px
+}
+h2{
+  text-align: center;
+  color:black;
+  padding:10px;
+  padding-top:30px;
+  border-style:solid;
+  background-color:#e6bbad
+}
+/* Containers Below Each Section */
+.container2{
+  padding-right:100px;
+  padding-left:200px;
+  padding-top:100px;
+  padding-bottom:100px;
+  border-style:solid;
+  background-color:#e6d8ad
+}
+p{
+  font-size:20px;
+  line-height: 2.0;
+  margin-right:100px
+}
+/* Picture Positioning and Sizes */
+#Me, #html, #script{
+  float:right;
+  margin-bottom:50px;
+  border-style:solid;
+  border-color:black
+}
+#script{
+  margin-top:105px;
+}
+#otc{
+  margin-left:415px;
+  border-style:solid;
+  border-color:black
+}
+/* Footer */
+footer{
+  text-align:center;
+  padding-top:25px;
+  padding-bottom:25px;
+  color:black;
+  font-size:25px
+}
+/* Media Querys */
+@media only screen and (min-width: 568px) {
+  nav {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+  }
+
+  .tab1 {
+    order: 1;
+    width: 50%;
+  }
+  .tab2 {
+    order: 3;
+    width: 50%;
+  }
+  .tab3 {
+    order: 2;
+    width: 49%;
+  }
+
+
+}
+
+@media only screen and (min-width: 786px) {
+  nav {
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+
+  .tab1 {
+    order: 1;
+  }
+
+  .tab2 {
+    order: 2;
+  }
+  .tab3 {
+    order: 3;
+  }
+}
